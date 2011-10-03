@@ -2,3 +2,6 @@ README wp-torrent
 
 wp-torrent is a wordpress application which transforms wordpress into a torrent tracker using XBTT as a backend.
 (http://xbtt.sourceforge.net/tracker/)
+
+To change the theme of the site please create a child theme according to
+http://codex.wordpress.org/Child_Themes. An example is included in child-theme-example
