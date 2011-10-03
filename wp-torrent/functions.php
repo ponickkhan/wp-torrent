@@ -70,5 +70,29 @@ $category_labels = array(
 
 register_taxonomy( 'torrent-categories', array("torrent"), array("hierarchical" => true, "labels" => $category_labels, "rewrite" => true ) );
 
+# change role names
+
+function change_role_name() {
+	global $wp_roles;
+
+	if ( ! isset( $wp_roles ) )
+		$wp_roles = new WP_Roles();
+	# administrator
+	$wp_roles->roles['administrator']['name'] = 'Owner';
+	$wp_roles->role_names['administrator'] = 'Owner';
+	# editor
+	$wp_roles->roles['editor']['name'] = 'Moderator';
+	$wp_roles->role_names['editor'] = 'Moderator';
+	# author
+	$wp_roles->roles['author']['name'] = 'Uploader';
+	$wp_roles->role_names['author'] = 'Uploader';
+	# contributor
+	$wp_roles->roles['contributor']['name'] = 'VIP';
+	$wp_roles->role_names['contributor'] = 'VIP';
+	# subscriber
+	$wp_roles->roles['subscriber']['name'] = 'Member';
+	$wp_roles->role_names['subscriber'] = 'Member';
+}
+add_action('init', 'change_role_name');
 
 # end 
