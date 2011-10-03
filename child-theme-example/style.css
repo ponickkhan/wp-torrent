@@ -1,0 +1,12 @@
+/*
+Theme Name: wp-torrent child
+Description: Child theme for wp-torrent
+Author: Max Malm
+Template: wp-torrent
+*/
+
+@import url("../wp-torrent/style.css");
+
+#site-title a {
+    color: #009900;
+}
