@@ -71,4 +71,4 @@ $category_labels = array(
 register_taxonomy( 'torrent-categories', array("torrent"), array("hierarchical" => true, "labels" => $category_labels, "rewrite" => true ) );
 
 
-# end
+# end 
