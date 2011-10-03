@@ -1,0 +1,4 @@
+README wp-torrent
+
+wp-torrent is a wordpress application which transforms wordpress into a torrent tracker using XBTT as a backend.
+(http://xbtt.sourceforge.net/tracker/)
