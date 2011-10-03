@@ -13,9 +13,9 @@ if(function_exists( 'show_admin_bar' )) {
 	add_action( 'show_admin_bar', '__return_false' );
 }
 
-require_once(TEMPLATEPATH . 'functions/shortcode.php'); // load the master shortcode file
-require_once(TEMPLATEPATH . 'functions/widgets.php'); // load the master widgets file
-require_once(TEMPLATEPATH . 'functions/menus.php'); // load the menu file
+require_once(TEMPLATEPATH . '/functions/shortcode.php'); // load the master shortcode file
+require_once(TEMPLATEPATH . '/functions/widgets.php'); // load the master widgets file
+require_once(TEMPLATEPATH . '/functions/menus.php'); // load the menu file
 
 # add torrent post type
 
