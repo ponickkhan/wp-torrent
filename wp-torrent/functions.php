@@ -43,7 +43,7 @@ function create_torrent_post_type() {
 		'publicly_queryable' => true,
 		'show_ui' => true,
 		'query_var' => true,
-		'rewrite' => array( 'slug' => 'torrent-item', 'with_front' => false ),
+		'rewrite' => array( 'slug' => 'torrent', 'with_front' => false ),
 		'capability_type' => 'post',
 		'hierarchical' => true,
 		'menu_position' => null,
@@ -92,6 +92,8 @@ function change_role_name() {
 	# subscriber
 	$wp_roles->roles['subscriber']['name'] = 'Member';
 	$wp_roles->role_names['subscriber'] = 'Member';
+	
+
 }
 add_action('init', 'change_role_name');
 
