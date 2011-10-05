@@ -1,7 +1,6 @@
 	</div><!-- #main -->
 
 	<footer id="colophon" role="contentinfo">
-
 			<?php
 				get_sidebar( 'footer' );
 			?>
