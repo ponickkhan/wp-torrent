@@ -70,7 +70,7 @@ $category_labels = array(
 
 register_taxonomy( 'torrent-categories', array("torrent"), array("hierarchical" => true, "labels" => $category_labels, "rewrite" => true ) );
 
-# change role names
+# change role names 
 
 function change_role_name() {
 	global $wp_roles;
