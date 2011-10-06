@@ -97,4 +97,14 @@ function change_role_name() {
 }
 add_action('init', 'change_role_name');
 
+function auth_redirect_login() {
+	# from http://wordpress.org/support/topic/custom-edit-profile-page#post-1286103
+    $user = wp_get_current_user();
+    if ( $user->id == 0 ) {
+        nocache_headers();
+        wp_redirect(get_option('siteurl') . '/wp-login.php?redirect_to=' . urlencode($_SERVER['REQUEST_URI']));
+        exit();
+    }
+}
+
 # end 
