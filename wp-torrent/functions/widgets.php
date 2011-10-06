@@ -75,3 +75,4 @@ function wptorrent_widgets_init() {
 add_action( 'widgets_init', 'wptorrent_widgets_init' );
 
 require_once('widgets/torrent-latest.php'); // Widget: Latest Torrents
+require_once('widgets/users-latest.php'); // Widget: Latest Users
